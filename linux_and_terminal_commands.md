@@ -39,6 +39,16 @@ You can COPY and MOVE file at the same time:
 cp file.txt Stuff/new_file.txt # a copy of file.txt was created under new_file.txt in the Stuff folder
 
 head - output the first part of files
+head song.txt -n 100 # prints out the first 100 lines of the file
+
+tail - output the last part of files
+tail song.txt # prints out the last 10 lines of the file
+tail song.txt -n 20 # prints out the last 20 lines of the file
+
+">" redirect command output
+date > today.txt # runs date command and outputs the result to the today.txt file
+IMPORTANT! This command replaces the content of the file, it is not adding to it. 
+
 
 
 
