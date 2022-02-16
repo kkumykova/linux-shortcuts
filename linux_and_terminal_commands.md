@@ -30,8 +30,16 @@ mv pear new_pear - renames an existing file
 mv new_pear /Stuff - as long as the destination folder comes last, the file(s) will be moved into this folder.
 
 cp - copy files/folders
+cp file-you-want-to-copy.txt destination.txt
 
-1:28
+If you want to cope a dir with all the contents -> use -r, --recursive for "copy dirs recursively"
+cp -r folder-to-copy destination-folder
+
+You can COPY and MOVE file at the same time:
+cp file.txt Stuff/new_file.txt # a copy of file.txt was created under new_file.txt in the Stuff folder
+
+head - output the first part of files
+
 
 
 
