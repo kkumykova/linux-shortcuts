@@ -64,15 +64,18 @@ less -  shows the content of a file in a nice interactive way
 less all.txt
 
 To search through the output: /search-word
+
 q to quit 
 
 
 echo - it takes the argument you pass and prints it out. It is useful if you create config files with initial text.
+
 echo "hello" > hello.txt # writes "hello" to a newly created hello.txt file
 
 wc - word count (also, lines, (words), bytes)
 
 wc -l all.txt # show nr of lines
+
 wc -w all.txt # show nr of words
 
 Piping - run a command and use it's output as an input in another command:
@@ -80,10 +83,15 @@ Piping - run a command and use it's output as an input in another command:
 ls -l | wc # list the content of current working dir and count the lines, words and bytes
 
 sort all.txt # sorts the contents of the file all.txt alphabetically but not changing the content
+
 sort -n nums.txt # sort data numerically
+
 sort -nr nums.txt # sort data numerically in reverse order
+
 sort -nu nums.txt # sort data numerically and remove duplicate values; use "u" for unique
+
 sort -un nums.txt | wc -l # sort unique values numerically and count the number of lines
+
 
 
 
