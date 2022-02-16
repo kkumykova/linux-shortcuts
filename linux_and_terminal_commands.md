@@ -45,9 +45,45 @@ tail - output the last part of files
 tail song.txt # prints out the last 10 lines of the file
 tail song.txt -n 20 # prints out the last 20 lines of the file
 
-">" redirect command output
-date > today.txt # runs date command and outputs the result to the today.txt file
-IMPORTANT! This command replaces the content of the file, it is not adding to it. 
+">" redirect command output date > today.txt # runs date command and outputs the result to the today.txt file
+date > today.txt # adds the output to today.txt; if there is no today.txt it will create a new file and add the time to it.
+
+IMPORTANT! This command replaces the content of the file, it is not adding to it.
+to append, use >>
+
+cat file.txt # returns the entire content of the file
+
+cat file.txt file_two.txt # prints out the content of both files
+
+cat file.txt file_two.txt > all.txt # saves the content of both files to all.txt
+
+You can also use number lines in the output by adding -n:
+can -n all.txt
+
+less -  shows the content of a file in a nice interactive way
+less all.txt
+
+To search through the output: /search-word
+q to quit 
+
+
+echo - it takes the argument you pass and prints it out. It is useful if you create config files with initial text.
+echo "hello" > hello.txt # writes "hello" to a newly created hello.txt file
+
+wc - word count (also, lines, (words), bytes)
+
+wc -l all.txt # show nr of lines
+wc -w all.txt # show nr of words
+
+Piping - run a command and use it's output as an input in another command:
+
+ls -l | wc # list the content of current working dir and count the lines, words and bytes
+
+sort all.txt # sorts the contents of the file all.txt alphabetically but not changing the content
+sort -n nums.txt # sort data numerically
+sort -nr nums.txt # sort data numerically in reverse order
+sort -nu nums.txt # sort data numerically and remove duplicate values; use "u" for unique
+sort -un nums.txt | wc -l # sort unique values numerically and count the number of lines
 
 
 
