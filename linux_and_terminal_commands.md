@@ -126,7 +126,19 @@ touch app.{js, css, py} # will create app.js, app.css and app.py files
 ech {1..99} # will expand to numbers between those two digits
 
 DIFF - show the diff b/w files
+
 -u # show with some context around the changed lines
+
+FIND 
+
+find . -name '*.js' # find all js files in the current dir
+
+find . -type d -name '*E*' # find dirs in the current folder with "E" in them
+
+find . -type d -iname '*E*' # same as above but case-insensitive bacause of the use of "i"
+
+
+
 
 
 
