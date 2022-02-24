@@ -92,6 +92,9 @@ sort -nu nums.txt # sort data numerically and remove duplicate values; use "u" f
 
 sort -un nums.txt | wc -l # sort unique values numerically and count the number of lines
 
+cat butcher.txt groceries.txt | sort # concatenate both files and sort what it received as an input - the combined content
+
+
 
 
 
