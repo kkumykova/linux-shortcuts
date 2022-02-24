@@ -95,6 +95,24 @@ sort -un nums.txt | wc -l # sort unique values numerically and count the number 
 cat butcher.txt groceries.txt | sort # concatenate both files and sort what it received as an input - the combined content
 
 
+UNIQ - a command useful to sort lines of text.
+
+It reports or omits repeated lines.
+
+It only removes duplicate values that are found next to each other.
+
+It is normally used in conjunction with SORT. E.g.: sort flavors.txt | uniq
+
+sort flavors.txt | uniq -d # will only display duplicate values found in the file
+
+sort flavors.txt | uniq -u # will only display NON-duplicate values
+
+sort flavors.txt | uniq -c # show NON-duplicate values and count them
+
+sort flavors.txt | uniq -c | sort -n # ...and sort by number
+
+
+
 
 
 
