@@ -135,10 +135,21 @@ find . -name '*.js' # find all js files in the current dir
 
 find . -type d -name '*E*' # find dirs in the current folder with "E" in them
 
-find . -type d -iname '*E*' # same as above but case-insensitive bacause of the use of "i"
+find . -type d -iname '*E*' # same as above but case-insensitive because of the use of "i"
 
+GREP - global regular expression print; searches inside the files
 
+grep search-pattern where-to-search-file
 
+grep -r "chicken" . # find "chicken" in files in all sub-dirs of the current folder
+
+grep -ri "chicken" . # same as above but case-insensitive  
+
+du for disk usage - will calculate the size of the dir as a whole
+
+df - get disk usage information
+
+df -h Desktop
 
 
 
