@@ -111,6 +111,19 @@ sort flavors.txt | uniq -c # show NON-duplicate values and count them
 
 sort flavors.txt | uniq -c | sort -n # ...and sort by number
 
+EXPANSION
+
+Path name expansion 
+
+echo * # matches every path in the current working dir
+
+? matches a single character 
+
+{} expansion
+
+touch app.{js, css, py} # will create app.js, app.css and app.py files 
+
+ech {1..99} # will expand to numbers between those two digits
 
 
 
