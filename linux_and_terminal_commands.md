@@ -125,6 +125,9 @@ touch app.{js, css, py} # will create app.js, app.css and app.py files
 
 ech {1..99} # will expand to numbers between those two digits
 
+DIFF - show the diff b/w files
+-u # show with some context around the changed lines
+
 
 
 
