@@ -217,6 +217,14 @@ But xargs does resolve the above by acting as an "adapter":
 
 cat file.txt | xargs rm # read file and pass it to rm for removal
 
+ln - creates hard (these are rarely used due to some limitations) and soft links.
+With these links you can have a file that links to another file. 
+
+Use -s (--symbolic) option to make soft link.
+
+With the hard link, even if the original file is gone, the hard link with still have the contents of the original one as both were pointing to the same place of memory.
+With the symbolic link, if the original is gone, no contents will be found in the file link. The link will be pointing to a non-existing file even if the link is there.
+
 
 
 
