@@ -171,6 +171,33 @@ gunzip == gzip command plus -d option is always enabled by default:
 
 gunzip filename.txt.gz
 
+tar - to create an archive and group multiple files in a single file WITHOUT compressing them
+
+tar -cf archive.tar file1 file2
+
+-c is for "create"
+
+"f" is the way to provide file name - the name of the destination archive/end result name
+
+To extract files from the archive we use -x option, "x" for extract: 
+
+tar -xf file-to-un-archive.tar # the files will be extracted in teh current folder
+
+You can specify destination with -C:
+
+tar -xf file-to-un-archive.tar -C directory
+
+To compress an archive folder:
+
+gzip -k archive.tar 
+
+To combine and compress files at the same time:
+
+tar -czf archive.tar.gz file1 file2 # "z" is the option that does the compression
+
+To unzip and un-archive at the same time:
+
+tar -xf archive.tar.gz 
 
 
 
