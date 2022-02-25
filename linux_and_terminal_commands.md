@@ -199,6 +199,14 @@ To unzip and un-archive at the same time:
 
 tar -xf archive.tar.gz 
 
+nano - a beginner friendly editor.
+
+nano filename.txt
+
+alias - to create custom shortcuts; it only exists in the current window; to make permanent alias - update bash config file.
+
+alias myls='ls-la'
+
 
 
 
