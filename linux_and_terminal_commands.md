@@ -207,6 +207,16 @@ alias - to create custom shortcuts; it only exists in the current window; to mak
 
 alias myls='ls-la'
 
+xargs - the output of one command will be used as an input for another command:
+
+command1 | xargs command2
+
+The "|" does not pass the output from one command as an input to another one with all commands, e.g. with those that require to take additional input: rm
+
+But xargs does resolve the above by acting as an "adapter":
+
+cat file.txt | xargs rm # read file and pass it to rm for removal
+
 
 
 
