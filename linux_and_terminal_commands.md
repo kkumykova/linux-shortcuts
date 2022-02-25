@@ -225,7 +225,19 @@ Use -s (--symbolic) option to make soft link.
 With the hard link, even if the original file is gone, the hard link with still have the contents of the original one as both were pointing to the same place of memory.
 With the symbolic link, if the original is gone, no contents will be found in the file link. The link will be pointing to a non-existing file even if the link is there.
 
+who - displays the users logged in to the system;
 
+su - switch user
+
+sudo for "super user do" to run a command as root;
+
+chown for "change the owner"; use with sudo even if you are changing the permissions of your own files/folders.
+
+sudo chown owner filename
+
+To change the ownership of all nested files/folders, use -R:
+
+sudo chown -R kitty CatStuff/
 
 
 
