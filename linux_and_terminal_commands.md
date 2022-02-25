@@ -159,10 +159,17 @@ top - show top most CPU intensive processes
 
 killall -9 # stops all the processes
 
-killall -9 name-of-the-program-to-kill # stops this particular process; it can be used if it is difficult to find ps ID
+killall -9 name-of-the-program-to-kill # stops this particular process; it can be used if it is difficult to find ps ID as it does not require process ID.
 
+gzip to compress individual files
 
+gzip - k file.txt # compresses the input file in a separate file and keeps the original one.
 
+gzip -d filename.txt.gz # decompress the file
+
+gunzip == gzip command plus -d option is always enabled by default:
+
+gunzip filename.txt.gz
 
 
 
