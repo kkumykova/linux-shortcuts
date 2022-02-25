@@ -151,6 +151,25 @@ df - get disk usage information
 
 df -h Desktop
 
+history - shows the history of your commands
+
+ps for process status to view processes on your pc
+
+top - show top most CPU intensive processes
+
+killall -9 # stops all the processes
+
+killall -9 name-of-the-program-to-kill # stops this particular process; it can be used if it is difficult to find ps ID
+
+
+
+
+
+
+
+
+
+
 
 
 
