@@ -239,6 +239,13 @@ To change the ownership of all nested files/folders, use -R:
 
 sudo chown -R kitty CatStuff/
 
+chmod - change permissions 
+
+chmod g-r file.txt # remove read permissions for the group
+
+chmod o-rwx file.txt # remove read, write and execute permissions for the others
+
+chmod a=r file.txt # set permissions to read ONLY, do it for all
 
 
 
